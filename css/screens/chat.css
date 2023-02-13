@@ -1,0 +1,184 @@
+#chat-screen {
+  background-image: url(file:///Users/simgyujin/Desktop/%E1%84%87%E1%85%A2%E1%84%80%E1%85%A7%E1%86%BC5.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 160vh;
+}
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #e9e9e9;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+#chat-screen .alt-header {
+  z-index: 1;
+  top: 30px;
+}
+@keyframes fadein {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.main-chat {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 1s linear;
+}
+.chats-timestamp {
+  color: white;
+  background-color: #ead55e;
+  padding: 19px 10px 12px 12px;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.message-rows {
+  margin-left: 146px;
+}
+.message-row__content {
+  padding-top: 15px;
+}
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: var(--main-border);
+  margin-right: 10px;
+}
+.message__time,
+.message__author {
+  font-size: 15px;
+  margin-bottom: 1px;
+  display: block;
+  opacity: 0.5;
+}
+
+.message__info {
+  display: flex;
+  align-items: end;
+  margin-top: 5px;
+}
+.message__bubble {
+  background-color: white;
+  padding: 13px 15px 8px;
+  border-radius: 15px;
+  font-size: 18px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  opacity: 0.7;
+  margin-right: 10px;
+}
+
+.message-row__own {
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+.message-row__own .message__bubble {
+  margin-left: 10px;
+  background-color: #ead55e;
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 0px;
+}
+.message-row__own .message__bubble {
+  order: 1;
+}
+.message-row__own .massage__time {
+  order: 0;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.reply .reply-column:first-child {
+  width: 10%;
+}
+.reply .reply-column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.reply-column:last-child > i,
+.reply-column:last-child button {
+  position: absolute;
+  right: -4px;
+  top: 2px;
+}
+.reply-column:last-child > i {
+  right: 33px;
+  top: 8px;
+  font-size: 20px;
+}
+.reply-column:first-child i {
+  padding-top: 10px;
+}
+.reply-column button {
+  background-color: #ead55e;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.reply-column button i {
+  opacity: 1;
+}
+.reply-column button:focus,
+.reply-column button:active {
+  outline: none;
+}
+
+.reply .reply-column:first-child,
+.reply .fa-face-smile,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply-column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 99vw;
+  transform: translateX(-13%) translateY(-20px);
+}
+.reply:focus-within {
+  transform: translateY(20px);
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+Ahom&display=swap");
+@import "reset.css";
+@import "variables.css";
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screan-header.css";
+@import "components/alt-screen-header.css";
+@import "components/user-componet.css";
+@import "components/m-badge.css";
+@import "components/icon-row.css";
+@import "components/no-mobile.css";
+
+/* screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* 파일 순서대로 import 해주는게 정말 중요하다 */
+body {
+  height: 130vh;
+  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Serif Ahom", serif;
+  color: black;
+  /* height: 1000vb; */
+  /* 상태바 고정하는거 확인할때 쓰기 */
+}
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+.find-screan {
+  margin: 0px var(--horizontal-space);
+}

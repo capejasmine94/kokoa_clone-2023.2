@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>루기아 채팅</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fab fa-apple fa-2x"></i>
+        <span>21:41</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-three-quarters fa-2x"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <a href="chats.html">
+            <i class="fa-solid fa-angle-left fa-2xl"></i>
+          </a>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">루기아</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+        <span><i class="fa-solid fa-bars fa-2x"></i></span>
+      </div>
+    </header>
+
+    <main class="friends-screen main-chat">
+      <div class="chats-timestamp">2023년 2월 7일 화요일</div>
+
+      <div class="message-row">
+        <img src="css/screenshots/루기아.png" />
+        <div class="message-row__content">
+          <span class="message__author">루기아</span>
+          <div class="message__info">
+            <span class="message__bubble">뮤츠!!</span>
+            <!-- <span class="message__time">19:22</span> -->
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-rows">
+        <div class="message__info">
+          <span class="message__bubble">지우 결승전 볼꺼?</span>
+          <span class="message__time">19:22</span>
+        </div>
+      </div>
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">응 친구들이랑 보는중!!</span>
+            <span class="message__time">19:23</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img src="css/screenshots/루기아.png" />
+        <div class="message-row__content">
+          <span class="message__author"></span>
+          <div class="message__info">
+            <span class="message__bubble">와 대박이다</span>
+            <!-- <span class="message__time">19:22</span> -->
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-rows">
+        <div class="message__info">
+          <span class="message__bubble">드디어 25년만에</span>
+          <!-- <span class="message__time">19:22</span> -->
+        </div>
+      </div>
+      <div class="message-row message-rows">
+        <div class="message__info">
+          <span class="message__bubble">지우 우승했네!</span>
+          <span class="message__time">20:22</span>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply-column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply-column">
+        <input type="text" />
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>화면이 너무 커요 줄여주세요!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9d078feb47.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포켓몬톡 찾기</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fab fa-apple fa-2x"></i>
+        <span>21:41</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-three-quarters fa-2x"></i>
+      </div>
+    </div>
+
+    <header class="screan-header">
+      <h1 class="screan-header__title">찾기</h1>
+      <div class="screan-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass fa-2x"></i></span>
+        <span><i class="fa-solid fa-gear fa-2x"></i></span>
+        <div></div>
+      </div>
+    </header>
+
+    <main class="find-screan">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-gifts"></i>
+          <span>선물하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>쇼핑하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-brands fa-discord"></i>
+          <span>게임하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-brands fa-wordpress"></i>
+          <span>시청하기</span>
+        </div>
+      </div>
+      <div class="recommended-news">
+        <h1 class="recommended-news__title">포켓몬스터 뉴스</h1>
+        <div class="recommended-news__img">
+          <img
+            class="recommended-news__img"
+            src="css/screenshots/지우우승 2.jpeg"
+          />
+        </div>
+        <div class="recommended-news__subtitle">
+          <i class="fa-solid fa-crown fa-xl"></i>
+          <span class="recommended-news__text">지우 챔피언쉽 우승</span>
+          <i class="fa-solid fa-trophy fa-xl"></i>
+        </div>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>오픈 채팅</h4>
+          <span
+            >오픈 채팅방 만들기 <i class="fa-solid fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__titlel">#포켓몬GO</h5>
+            <h6 class="open-post__hashtags">#뚜벅이#GPS#공존</h6>
+            <div class="open-post__members">
+              <img src="css/screenshots/포켓몬볼.jpeg" />
+              <span class="open-post__member-count">1022명</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">방금대화</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="css/screenshots/포켓몬오픈1.jpeg" />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart"></i>
+                <span>1.7K</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="open-chat">
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__titlel">#포켓몬고 정보공유</h5>
+            <h6 class="open-post__hashtags">#정보#레이드#친목</h6>
+            <div class="open-post__members">
+              <img src="css/screenshots/포켓몬볼.jpeg" />
+              <span class="open-post__member-count">934명</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">방금대화</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="css/screenshots/오픈채팅2.jpeg" />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart"></i>
+                <span>825</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- nav 는 보통 ul로 나누고 그안에 많은 li 가 있다 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__M_alarm m-badge">2</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fa-solid fa-magnifying-glass fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="naV__T_alarm"></div>
+            <i class="fa-solid fa-toggle-off fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>화면이 너무 커요 줄여주세요!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9d078feb47.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

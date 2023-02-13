@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포켓몬톡 로그인</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fab fa-apple fa-2x"></i>
+        <span>21:41</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-battery-three-quarters fa-2x"></i>
+      </div>
+    </div>
+    <header class="Welcome-header">
+      <h1 class="welcome-header__title">포켓몬톡</h1>
+    </header>
+
+    <form action="friends.html" method="get" id="Login-form">
+      <!-- action = 어떤 페이지로 data를 보낼건지 지정하기 -->
+      <!-- method =  post(백엔드), get(보안취약:URL)-->
+      <input name="username" required (type="text" placeholder="아이디" />
+      <input name="password" required (type="password" placeholder="비밀번호" />
+      <input type="submit" value="로그인" />
+      <a href="#">아이디 찾기</a>
+      <a href="#">비밀번호 찾기 </a>
+      <a href="#">회원가입</a>
+    </form>
+    <div id="no-mobile">
+      <span>화면이 너무 커요 줄여주세요!</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/9d078feb47.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.screan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.screan-header__title {
+  font-size: 35px;
+  font-weight: 600;
+}
+.screan-header__icons span {
+  margin-left: var(--horizontal-space);
+}
+.screan-header__icons div {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+@keyframes rotatecog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screan-header__icons .fa-gear:hover {
+  animation: rotatecog 1s linear infinite;
+}

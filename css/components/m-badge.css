@@ -1,0 +1,13 @@
+.m-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  font-weight: 600;
+}
