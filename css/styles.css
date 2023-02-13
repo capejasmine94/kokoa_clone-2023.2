@@ -22,6 +22,7 @@
 /* 파일 순서대로 import 해주는게 정말 중요하다 */
 body {
   height: 500vh;
+  width: 100vw;
   font-family: "Noto Sans KR", sans-serif;
   font-family: "Noto Serif Ahom", serif;
   color: black;
